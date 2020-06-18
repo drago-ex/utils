@@ -1,0 +1,25 @@
+{
+	"name": "drago-ex/utils",
+	"type": "library",
+	"description": "Simple utilities for string and array.",
+	"license": ["MIT"],
+	"authors": [
+		{
+			"name": "Zdeněk Papučík",
+			"homepage": "https://github.com/accgit"
+		}
+	],
+	"require": {
+		"php": ">=7.1",
+		"nette/utils": "^3.0"
+	},
+	"require-dev": {
+		"nette/bootstrap": "^3.0",
+		"nette/tester": "^2.3",
+		"tracy/tracy": "^2.7",
+		"phpstan/phpstan-nette": "^0.12"
+	},
+	"autoload": {
+		"classmap": ["src/"]
+	}
+}

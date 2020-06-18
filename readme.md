@@ -6,4 +6,4 @@
 <p align="center">Simple packages built on Nette Framework</p>
 
 ## Info
-
+Simple utilities for string and array.
