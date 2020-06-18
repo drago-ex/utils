@@ -13,7 +13,7 @@ namespace Drago\Utils;
 class CaseConvertor
 {
 	/**
-	 * Character conversion to snake.
+	 * Converting CamelCase to snake_case.
 	 */
 	public static function snakeCase(string $input): string
 	{
