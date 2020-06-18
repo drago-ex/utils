@@ -10,7 +10,7 @@ declare(strict_types = 1);
 namespace Drago\Utils;
 
 
-class CaseConvertor
+class CaseConverter
 {
 	/**
 	 * Converting CamelCase to snake_case.
