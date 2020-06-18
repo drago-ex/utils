@@ -9,11 +9,11 @@ declare(strict_types = 1);
 
 namespace Drago\Utils;
 
-use Nette;
+use Nette\Utils\ArrayHash;
 use Nette\Utils\Strings;
 
 
-class ArrayHash extends Nette\Utils\ArrayHash
+class ExtraArrayHash extends ArrayHash
 {
 	/**
 	 * Returns items as array.
