@@ -7,6 +7,6 @@ use Drago\Utils\ExtraArrayHash;
 
 class TestArrayHash extends ExtraArrayHash
 {
-	/** @var $string */
+	/** @var string */
 	public $var;
 }
