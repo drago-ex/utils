@@ -5,8 +5,8 @@
 <h3 align="center">Drago Extension</h3>
 <p align="center">Extension for Nette Framework</p>
 
-## Info
-Simple utilities for string and array.
+## Drago Utils
+String and field tools.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/drago-ex/utils/master/license.md)
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Futils.svg)](https://badge.fury.io/ph/drago-ex%2Fdatabase)
