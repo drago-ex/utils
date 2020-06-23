@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">Drago Extension</h3>
-<p align="center">Simple packages built on Nette Framework</p>
+<p align="center">Extension for Nette Framework</p>
 
 ## Info
 Simple utilities for string and array.
@@ -15,13 +15,10 @@ Simple utilities for string and array.
 [![Coverage Status](https://coveralls.io/repos/github/drago-ex/utils/badge.svg?branch=master)](https://coveralls.io/github/drago-ex/utils?branch=master)
 
 ## Requirements
-- PHP 7.1 or higher
+- PHP 7.4 or higher
 - composer
 
 ## Installation
 ```
 composer require drago-ex/utils
 ```
-
-## Documentation
-https://github.com/drago-ex/database/wiki/Documentation
