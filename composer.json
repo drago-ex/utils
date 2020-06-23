@@ -1,7 +1,7 @@
 {
 	"name": "drago-ex/utils",
 	"type": "library",
-	"description": "String and field tools for the Nette Framework",
+	"description": "String and array tools for the Nette Framework",
 	"license": ["MIT"],
 	"authors": [
 		{
