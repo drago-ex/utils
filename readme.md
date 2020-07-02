@@ -22,3 +22,13 @@ String and array tools.
 ```
 composer require drago-ex/utils
 ```
+
+## Returns items as array
+```php
+$data->toArray();
+```
+
+## Returns items as array with converted keys to uppercase
+```php
+$data->toArrayUpper();
+```
