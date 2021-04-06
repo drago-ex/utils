@@ -15,7 +15,7 @@ String and array tools.
 [![Coverage Status](https://coveralls.io/repos/github/drago-ex/utils/badge.svg?branch=master)](https://coveralls.io/github/drago-ex/utils?branch=master)
 
 ## Requirements
-- PHP 7.4 or higher
+- PHP 8.0 or higher
 - composer
 
 ## Installation
