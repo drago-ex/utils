@@ -10,7 +10,6 @@ declare(strict_types=1);
 namespace Drago\Utils;
 
 use Nette\Utils\ArrayHash;
-use Nette\Utils\Strings;
 
 
 class ExtraArrayHash extends ArrayHash
