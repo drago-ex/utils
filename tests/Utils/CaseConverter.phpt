@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Test: Drago\Utils\CaseConverter
+ */
+
 declare(strict_types=1);
 
 use Drago\Utils;
