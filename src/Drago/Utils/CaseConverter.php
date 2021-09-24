@@ -20,8 +20,6 @@ class CaseConverter
 		if (preg_match('/[A-Z]/', $input) === 0) {
 			return $input;
 		}
-		return strtolower(preg_replace_callback('/([a-z])([A-Z])/', function (array $arr) {
-			return $arr[1] . '_' . strtolower($arr[2]);
-		}, $input));
+		return strtolower(preg_replace_callback('/([a-z])([A-Z])/', fn(array $arr) => $arr[1] . '_' . strtolower($arr[2]), $input));
 	}
 }
