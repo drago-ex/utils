@@ -18,17 +18,19 @@ conversions, and handling database-related tasks.
 composer require drago-ex/utils
 ```
 
-## Converts the internal data of the `ExtraArrayHash` object into a simple PHP array.
+## Methods:
+
+Converts the internal data of the `ExtraArrayHash` object into a simple PHP array.
 ```php
 $data->toArray();
 ```
 
-## Converts the internal data of the `ExtraArrayHash` object into a PHP array with all keys transformed to uppercase.
+Converts the internal data of the `ExtraArrayHash` object into a PHP array with all keys transformed to uppercase.
 ```php
 $data->toArrayUpper();
 ```
 
-## Converts a string from CamelCase to snake_case. This method is useful for converting variable or method names commonly used in programming languages.
+Converts a string from CamelCase to snake_case. This method is useful for converting variable or method names commonly used in programming languages.
 ```php
 CaseConverter::snakeCase(...)
 ```
