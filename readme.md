@@ -1,13 +1,12 @@
-## Drago Utils
+# Drago Utils
+
 This package includes several utility classes for working with arrays, case
 conversions, and handling database-related tasks.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/drago-ex/utils/master/license)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/drago-ex/utils/blob/master/license)
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Futils.svg)](https://badge.fury.io/ph/drago-ex%2Futils)
 [![Tests](https://github.com/drago-ex/utils/actions/workflows/tests.yml/badge.svg)](https://github.com/drago-ex/utils/actions/workflows/tests.yml)
 [![Coding Style](https://github.com/drago-ex/utils/actions/workflows/coding-style.yml/badge.svg)](https://github.com/drago-ex/utils/actions/workflows/coding-style.yml)
-[![CodeFactor](https://www.codefactor.io/repository/github/drago-ex/utils/badge)](https://www.codefactor.io/repository/github/drago-ex/utils)
-[![Coverage Status](https://coveralls.io/repos/github/drago-ex/utils/badge.svg?branch=master)](https://coveralls.io/github/drago-ex/utils?branch=master)
 
 ## Requirements
 - PHP >= 8.3
