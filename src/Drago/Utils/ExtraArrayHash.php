@@ -10,7 +10,10 @@ use Nette\Utils\ArrayHash;
 /** Extends ArrayHash with convenience methods for array conversion. */
 class ExtraArrayHash extends ArrayHash
 {
-	/** @return array<string, mixed> */
+	/**
+	 * Converts the object data to a simple array.
+	 * @return array<string, mixed>
+	 */
 	public function toArray(): array
 	{
 		/** @var array<string, mixed> $data */
@@ -19,7 +22,10 @@ class ExtraArrayHash extends ArrayHash
 	}
 
 
-	/** @return array<string, mixed> */
+	/**
+	 * Converts the object data to an array with all keys in uppercase.
+	 * @return array<string, mixed>
+	 */
 	public function toArrayUpper(): array
 	{
 		/** @var array<string, mixed> $data */
