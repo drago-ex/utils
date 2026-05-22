@@ -14,11 +14,8 @@ class ExtraArrayHash extends ArrayHash
 	 * Converts the object data to a simple array.
 	 * @return array<string, mixed>
 	 */
-	public function toArray(): array
-	{
-		/** @var array<string, mixed> $data */
-		$data = (array) $this;
-		return $data;
+	public function toArray(): array {
+		return (array) $this;
 	}
 
 
@@ -28,7 +25,6 @@ class ExtraArrayHash extends ArrayHash
 	 */
 	public function toArrayUpper(): array
 	{
-		/** @var array<string, mixed> $data */
 		$data = (array) $this;
 		return array_change_key_case($data, CASE_UPPER);
 	}
