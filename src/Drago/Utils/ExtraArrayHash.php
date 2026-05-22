@@ -14,7 +14,8 @@ class ExtraArrayHash extends ArrayHash
 	 * Converts the object data to a simple array.
 	 * @return array<string, mixed>
 	 */
-	public function toArray(): array {
+	public function toArray(): array
+	{
 		return (array) $this;
 	}
 
