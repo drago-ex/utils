@@ -7,7 +7,6 @@ namespace Drago\Utils;
 use Nette\Utils\ArrayHash;
 
 
-/** Extends ArrayHash with convenience methods for array conversion. */
 class ExtraArrayHash extends ArrayHash
 {
 	/**

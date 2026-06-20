@@ -18,7 +18,7 @@ conversions, and handling database-related tasks.
 composer require drago-ex/utils
 ```
 
-## Methods:
+## Methods
 
 Converts the internal data of the `ExtraArrayHash` object into a simple PHP array.
 ```php
