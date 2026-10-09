@@ -9,11 +9,13 @@ conversions, and handling database-related tasks.
 [![Coding Style](https://github.com/drago-ex/utils/actions/workflows/coding-style.yml/badge.svg)](https://github.com/drago-ex/utils/actions/workflows/coding-style.yml)
 
 ## Requirements
+
 - PHP >= 8.3
 - Nette Framework
 - Composer
 
 ## Installation
+
 ```
 composer require drago-ex/utils
 ```
