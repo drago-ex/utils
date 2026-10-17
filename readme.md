@@ -1,7 +1,7 @@
 # Drago Utils
 
-This package includes several utility classes for working with arrays, case
-conversions, and handling database-related tasks.
+Small helpers for Nette applications: an `ArrayHash` that converts itself to an array, and a
+conversion from camelCase to snake_case.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/drago-ex/utils/blob/main/license)
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Futils.svg)](https://badge.fury.io/ph/drago-ex%2Futils)
@@ -20,19 +20,31 @@ conversions, and handling database-related tasks.
 composer require drago-ex/utils
 ```
 
-## Methods
+## ExtraArrayHash
 
-Converts the internal data of the `ExtraArrayHash` object into a simple PHP array.
+`Drago\Utils\ExtraArrayHash` extends `Nette\Utils\ArrayHash`, for example as a parent of form value classes.
+
 ```php
+use Drago\Utils\ExtraArrayHash;
+
+$data = ExtraArrayHash::from([name => John, address => [city => Prague]]);
+
+// Plain array, nested hashes included: [name => John, address => [city => Prague]]
 $data->toArray();
-```
 
-Converts the internal data of the `ExtraArrayHash` object into a PHP array with all keys transformed to uppercase.
-```php
+// Same, with top-level keys in uppercase (e.g. for Oracle): [NAME => John, ADDRESS => [...]]
 $data->toArrayUpper();
 ```
 
-Converts a string from CamelCase to snake_case. This method is useful for converting variable or method names commonly used in programming languages.
+## CaseConverter
+
+Converts camelCase or PascalCase to snake_case:
+
 ```php
-CaseConverter::snakeCase(...)
+use Drago\Utils\CaseConverter;
+
+CaseConverter::snakeCase(versionName);  // version_name
+CaseConverter::snakeCase(version2Name); // version2_name
+CaseConverter::snakeCase(HTMLParser);   // html_parser
+CaseConverter::snakeCase(userID);       // user_id
 ```

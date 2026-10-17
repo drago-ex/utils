@@ -1,6 +1,6 @@
 {
 	"name": "drago-ex/utils",
-	"description": "Extended ArrayHash with additional methods for converting data to arrays, including support for uppercase keys.",
+	"description": "ArrayHash with conversion to plain arrays (including uppercase keys) and a camelCase to snake_case converter.",
 	"type": "library",
 	"license": "MIT",
 	"authors": [
