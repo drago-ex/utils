@@ -10,22 +10,33 @@ use Nette\Utils\ArrayHash;
 class ExtraArrayHash extends ArrayHash
 {
 	/**
-	 * Converts the object data to a simple array.
+	 * Converts the object data to a plain array, including nested hashes.
 	 * @return array<string, mixed>
 	 */
 	public function toArray(): array
 	{
-		return (array) $this;
+		return self::convert($this);
 	}
 
 
 	/**
-	 * Converts the object data to an array with all keys in uppercase.
+	 * Converts the object data to an array with top-level keys in uppercase.
 	 * @return array<string, mixed>
 	 */
 	public function toArrayUpper(): array
 	{
-		$data = (array) $this;
-		return array_change_key_case($data, CASE_UPPER);
+		return array_change_key_case($this->toArray(), CASE_UPPER);
+	}
+
+
+	/** @return array<string, mixed> */
+	private static function convert(ArrayHash $hash): array
+	{
+		$data = [];
+		foreach ((array) $hash as $key => $value) {
+			$data[$key] = $value instanceof ArrayHash ? self::convert($value) : $value;
+		}
+
+		return $data;
 	}
 }

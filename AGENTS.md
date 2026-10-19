@@ -16,6 +16,10 @@ Use this file as package-specific guidance when working in this repository. Keep
 - `.github/`: CI workflows; keep their PHP versions and commands consistent with Composer and the package scripts.
 - `composer.json`: package metadata, dependency constraints, autoloading, and available Composer scripts.
 
+## Key Parts
+- `ExtraArrayHash::toArray()` converts nested hashes recursively; `toArrayUpper()` uppercases top-level keys.
+- `CaseConverter::snakeCase()` handles digits and acronyms (`version2Name` becomes `version2_name`, `HTMLParser` becomes `html_parser`).
+
 ## Dependencies
 
 Composer constraints describe the package contract. Before changing integration behavior, inspect the source and the actual call sites in this package; do not infer runtime usage solely from dependency declarations.
