@@ -31,10 +31,10 @@ use Drago\Utils\ExtraArrayHash;
 
 $data = ExtraArrayHash::from(['name' => 'John', 'address' => ['city' => 'Prague']]);
 
-// Obyčejné pole včetně vnořených: ['name' => 'John', 'address' => ['city' => 'Prague']]
+// Plain array, nested hashes included: ['name' => 'John', 'address' => ['city' => 'Prague']]
 $data->toArray();
 
-// Totéž s klíči první úrovně velkými písmeny (např. pro Oracle): ['NAME' => 'John', 'ADDRESS' => [...]]
+// Same, with top-level keys in uppercase (e.g. for Oracle): ['NAME' => 'John', 'ADDRESS' => [...]]
 $data->toArrayUpper();
 ```
 
