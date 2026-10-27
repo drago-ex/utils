@@ -1,7 +1,5 @@
 # Drago Utils
 
-[English](readme.md) | Čeština
-
 Drobní pomocníci pro aplikace v Nette: `ArrayHash`, který se umí převést na pole, a
 převod z camelCase na snake_case.
 

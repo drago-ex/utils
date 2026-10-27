@@ -1,7 +1,5 @@
 # Drago Utils
 
-English | [Čeština](readme.cs.md)
-
 Small helpers for Nette applications: an `ArrayHash` that converts itself to an array, and a
 conversion from camelCase to snake_case.
 
