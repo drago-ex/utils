@@ -18,7 +18,7 @@ Use this file as package-specific guidance when working in this repository. Keep
 
 ## Key Parts
 - `ExtraArrayHash::toArray()` converts nested hashes recursively; `toArrayUpper()` uppercases top-level keys.
-- `CaseConverter::snakeCase()` handles digits and acronyms (`version2Name` becomes `version2_name`, `HTMLParser` becomes `html_parser`).
+- `CaseConverter::snakeCase()` handles digits and acronyms (`version2Name` becomes `version2_name`, `HTMLParser` becomes `html_parser`). `camelCase()` is its reverse for snake_case column names (`used_count` becomes `usedCount`); input without an underscore stays as it is.
 
 ## Dependencies
 

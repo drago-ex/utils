@@ -38,7 +38,7 @@ $data->toArrayUpper();
 
 ## CaseConverter
 
-Converts camelCase or PascalCase to snake_case:
+Converts camelCase or PascalCase to snake_case and snake_case back to camelCase:
 
 ```php
 use Drago\Utils\CaseConverter;
@@ -47,4 +47,7 @@ CaseConverter::snakeCase('versionName');  // version_name
 CaseConverter::snakeCase('version2Name'); // version2_name
 CaseConverter::snakeCase('HTMLParser');   // html_parser
 CaseConverter::snakeCase('userID');       // user_id
+
+CaseConverter::camelCase('version_name'); // versionName
+CaseConverter::camelCase('USED_COUNT');   // usedCount
 ```

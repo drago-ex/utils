@@ -34,3 +34,27 @@ test('Acronyms are kept together', function () {
 	Assert::same('user_id', CaseConverter::snakeCase('userID'));
 	Assert::same('parse_xml_file', CaseConverter::snakeCase('parseXMLFile'));
 });
+
+
+test('Snake case is converted to camel case', function () {
+	foreach (['case_case', 'CASE_CASE', 'Case_Case', 'case__case'] as $input) {
+		Assert::same('caseCase', CaseConverter::camelCase($input), $input);
+	}
+
+	Assert::same('version2Name', CaseConverter::camelCase('version2_name'));
+	Assert::same('addressLine1', CaseConverter::camelCase('address_line1'));
+});
+
+
+test('Input without an underscore is returned unchanged', function () {
+	Assert::same('alreadyCamel', CaseConverter::camelCase('alreadyCamel'));
+	Assert::same('sample', CaseConverter::camelCase('sample'));
+	Assert::same('', CaseConverter::camelCase(''));
+});
+
+
+test('Snake case column names survive the conversion there and back', function () {
+	foreach (['used_count', 'created_at', 'minimum_order_amount', 'version2_name', 'address_line1', 'id'] as $column) {
+		Assert::same($column, CaseConverter::snakeCase(CaseConverter::camelCase($column)), $column);
+	}
+});
