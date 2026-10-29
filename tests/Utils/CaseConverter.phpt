@@ -1,10 +1,8 @@
-<?php
+<?php declare(strict_types=1);
 
 /**
  * Test: Drago\Utils\CaseConverter
  */
-
-declare(strict_types=1);
 
 use Drago\Utils\CaseConverter;
 use Tester\Assert;
