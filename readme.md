@@ -1,7 +1,7 @@
 # Drago Utils
 
-Small helpers for Nette applications: an `ArrayHash` that converts itself to an array, and a
-conversion from camelCase to snake_case.
+Small helpers for Nette applications: an `ArrayHash` that converts itself to an array, and conversions
+between camelCase and snake_case.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/drago-ex/utils/blob/main/license)
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Futils.svg)](https://badge.fury.io/ph/drago-ex%2Futils)
